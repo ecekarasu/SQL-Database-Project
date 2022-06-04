@@ -2,15 +2,19 @@
 include "config.php";
 
 ?>
-
+<div align="center">
+<br>
+<h3>You will see the criminals whose punishments are more than the number you entered
 <form action = "selectcriminals.php" method = "POST">
-<input type="text" name="min_punishment" placeholder="The Minimum Punishment">
+<br>
+<input type="text" name="min_punishment" placeholder="Minimum Punishment">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Criminals</title>
+	<title>select criminals</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -31,13 +35,7 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>cid</th>
-    <th>cname</th>
-    <th>crime</th>
-    <th>punishment</th>
-  </tr>
-
+</div>
 <?php
 if(isset($_POST['min_punishment']))
 {

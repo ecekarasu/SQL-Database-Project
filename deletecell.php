@@ -1,7 +1,13 @@
 <?php
 include "config.php";
 ?>
-
+<link rel= "stylesheet" href= "style.css">
+<title>delete a cell</title>
+<div align="center">
+<br>
+<h3>Choose the cell number that you want to delete
+<br>
+<br>
 <form action = "deletecell.php" method = "POST">
 <select name = "cell_no">
 <?php  

@@ -1,7 +1,13 @@
 <?php
 include "config.php";
 ?>
-
+<link rel= "stylesheet" href= "style.css">
+<title>delete a lawyer</title>
+<div align="center">
+<br>
+<h3>Choose the id of the lawyer that you want to delete
+<br>
+<br>
 <form action = "deletelawyer.php" method = "POST">
 <select name = "lid">
 <?php  
@@ -13,6 +19,7 @@ while($lid_rows = mysqli_fetch_assoc($myresult))
 	echo "<option value = $lid>" . $lid . "</option>";
 }
 ?>
+</div>
 </select>
 <br>
 <button>DELETE</button>

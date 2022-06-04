@@ -2,15 +2,19 @@
 include "config.php";
 
 ?>
-
+<div align="center">
+<br>
+<h3>You will see the guardians who work more than the number you entered
 <form action = "selectguardians.php" method = "POST">
-<input type="text" name="min_hours" placeholder="The Minimum Working Hours">
+<br>
+<input type="text" name="min_hours" placeholder="Working Hours">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Guardians</title>
+	<title>select guardians</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -31,17 +35,12 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>gid</th>
-    <th>gname</th>
-    <th>working_hours</th>
-  </tr>
-
+</div>
 <?php
 if(isset($_POST['min_hours']))
 {
 	$hours = $_POST['min_hours'];
-	$sql_deneme = "SELECT * FROM guardians WHERE hours > '$hours'";
+	$sql_deneme = "SELECT * FROM guardians WHERE working_hours > '$hours'";
 	$denemeque = mysqli_query($db, $sql_deneme);
 	while($row = mysqli_fetch_assoc($denemeque)) { ?>
 	<tr>

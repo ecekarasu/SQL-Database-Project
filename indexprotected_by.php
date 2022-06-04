@@ -8,7 +8,7 @@
 <div align=center>
 <h2>PROTECTED_BY
 <br>
-<h3> Here are the protection relationships in the database:
+<h3> Here are the current protection relationships:
 <br>
 <br>
 </div>

@@ -2,16 +2,19 @@
 include "config.php";
 
 ?>
-
-<form action = "selectprison.php" method = "POST">
+<div align="center">
+<br>
+<h3>You will see the prisons in the location you entered
+<form action = "selectprisons.php" method = "POST">
+<br>
 <input type="text" name="location" placeholder="The Location">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prisons
-	</title>
+	<title>select prisons</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -32,17 +35,12 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>pname</th>
-    <th>population</th>
-    <th>location</th>
-  </tr>
-
+</div>
 <?php
 if(isset($_POST['location']))
 {
 	$location = $_POST['location'];
-	$sql_deneme = "SELECT * FROM low_security WHERE location > '$location'";
+	$sql_deneme = "SELECT * FROM prisons WHERE location > '$location'";
 	$denemeque = mysqli_query($db, $sql_deneme);
 	while($row = mysqli_fetch_assoc($denemeque)) { ?>
 	<tr>

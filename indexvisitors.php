@@ -8,7 +8,7 @@
 <div align=center>
 <h2>VISITORS
 <br>
-<h3> Here are the visitors in the database:
+<h3> Here are the current visitors:
 <br>
 <br>
 </div>

@@ -8,7 +8,7 @@
 <div align=center>
 <h2>GUARDIANS
 <br>
-<h3> Here are the guardians in the database:
+<h3> Here are the current guardians:
 <br>
 <br>
 </div>

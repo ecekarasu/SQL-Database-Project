@@ -8,7 +8,7 @@
 <div align=center>
 <h2>CONTAIN
 <br>
-<h3> Here are the relationships between the cells and the prisons in the database:
+<h3> Here are the current relationships between the cells and the prisons:
 <br>
 <br>
 </div>

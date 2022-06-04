@@ -7,11 +7,11 @@ include "config.php";
 <input type="text" name="number_of" placeholder="Enter a minimum number of cells">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contain
-	</title>
+	<title>select relationships</title>
 	<style>
 table {
   font-family: arial, sans-serif;

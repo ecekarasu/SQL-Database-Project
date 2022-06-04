@@ -2,15 +2,19 @@
 include "config.php";
 
 ?>
-
+<div align="center">
+<br>
+<h3>You will see the lawyers with cost more than the number you entered
 <form action = "selectlawyers.php" method = "POST">
+<br>
 <input type="text" name="min_cost" placeholder="The Minimum Cost">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lawyers</title>
+	<title>select lawyers</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -31,12 +35,7 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>lid</th>
-    <th>cost</th>
-    <th>name</th>
-  </tr>
-
+</div>
 <?php
 if(isset($_POST['min_cost']))
 {

@@ -6,12 +6,11 @@ include "config.php";
 <form action = "selectstay_in.php" method = "POST">
 <input type="text" name="since" placeholder="Enter a year">
 <!DOCTYPE html>
-<html>
+<html><link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Stay_in
-	</title>
+	<title>select relationships</title>
 	<style>
 table {
   font-family: arial, sans-serif;

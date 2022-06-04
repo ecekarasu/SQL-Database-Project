@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
+<div align = center>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Inserted</title>
+	<title>insert a visitor</title>
 </head>
 <body>
 
@@ -14,7 +16,6 @@
 
 include "config.php";
 ?>
-<div align = center>
 <form action="insertvisitor.php" method="POST">
 	<input type="text" name="vid" placeholder="The id">
 	<br>

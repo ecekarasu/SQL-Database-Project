@@ -8,7 +8,7 @@
 <div align=center>
 <h2>CRIMINALS
 <br>
-<h3> Here are the criminals in the database:
+<h3> Here are the current criminals:
 <br>
 <br>
 </div>

@@ -8,7 +8,7 @@
 <div align=center>
 <h2> MAIN PAGE
 <br>
-<h3> Select one of the tables below :)
+<h3> Select one of the tables below
 <br>
 <br>
 </body>
@@ -25,30 +25,40 @@ div {
 <form action="indexcriminals.php" method="POST">
 <br>
 <button>CRIMINALS</button>
+</form>
+<br>
 <form action="indexprisons.php" method="POST">
 <button>PRISONS</button>
 </form>
 <br>
 <form action="indexguardians.php" method="POST">
 <button>GUARDIANS</button>
+</form>
+<br>
 <form action="indexcells.php" method="POST">
 <button>CELLS</button>
 </form>
 <br>
 <form action="indexcontain.php" method="POST">
 <button>CONTAIN</button>
+</form>
+<br>
 <form action="indexstay_in.php" method="POST">
 <button>STAY_IN</button>
 </form>
 <br>
 <form action="indexlawyers.php" method="POST">
 <button>LAWYERS</button>
+</form>
+<br>
 <form action="indexdefended_by.php" method="POST">
 <button>DEFENDED_BY</button>
 </form>
 <br>
 <form action="indexvisitors.php" method="POST">
 <button>VISITORS</button>
+</form>
+<br>
 <form action="indexhave.php" method="POST">
 <button>HAVE</button>
 </form>

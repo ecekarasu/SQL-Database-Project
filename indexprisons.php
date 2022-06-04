@@ -8,7 +8,7 @@
 <div align=center>
 <h2>PRISONS
 <br>
-<h3> Here are the prisons in the database:
+<h3> Here are the current prisons:
 <br>
 <br>
 </div>

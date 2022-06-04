@@ -8,7 +8,7 @@
 <div align=center>
 <h2>DEFENDED_BY
 <br>
-<h3> Here are the relationships between the lawyers and the criminals in the database:
+<h3> Here are the current relationships between the lawyers and the criminals in the database:
 <br>
 <br>
 </div>

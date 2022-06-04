@@ -8,7 +8,7 @@
 <div align=center>
 <h2>LAWYERS
 <br>
-<h3> Here are the lawyers in database:
+<h3> Here are the current lawyers:
 <br>
 <br>
 </div>

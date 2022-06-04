@@ -8,7 +8,7 @@
 <div align=center>
 <h2>HAVE
 <br>
-<h3> Here are the relationships between the criminals and the visitors in the database:
+<h3> Here are the current relationships between the criminals and the visitors:
 <br>
 <br>
 </div>

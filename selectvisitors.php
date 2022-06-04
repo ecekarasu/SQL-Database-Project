@@ -2,15 +2,19 @@
 include "config.php";
 
 ?>
-
+<div align="center">
+<br>
+<h3>You will see the visitors with the same relation that you entered
 <form action = "selectvisitors.php" method = "POST">
+<br>
 <input type="text" name="relation" placeholder="The Relation">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Visitors</title>
+	<title>select visitors</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -31,14 +35,9 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>vid</th>
-    <th>visiting_time</th>
-    <th>relation</th>
-  </tr>
-
+</div>
 <?php
-if(isset($_POST['realtion']))
+if(isset($_POST['relation']))
 {
 	$relation = $_POST['relation'];
 	$sql_deneme = "SELECT * FROM visitors WHERE relation = '$relation'";

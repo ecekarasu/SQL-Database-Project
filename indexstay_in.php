@@ -8,7 +8,7 @@
 <div align=center>
 <H2>STAY_IN
 <br>
-<h3> Here are the relationships between the criminals and the cells in the database:
+<h3> Here are the current relationships between the criminals and the cells:
 <br>
 <br>
 </div>

@@ -7,11 +7,11 @@ include "config.php";
 <input type="text" name="pname" placeholder="The Name of Prison">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Protected_by
-	</title>
+	<title>select relationships</title>
 	<style>
 table {
   font-family: arial, sans-serif;

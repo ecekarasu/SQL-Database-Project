@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
+<div align = center>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Inserted</title>
+	<title>insert a guardian</title>
+	<br>
+	<h3>Enter the information of the guardian that you want to insert
 </head>
 <body>
 
@@ -14,7 +18,8 @@
 
 include "config.php";
 ?>
-<div align = center>
+<br>
+<br>
 <form action="insertguardian.php" method="POST">
 	<input type="text" name="gid" placeholder="The id">
 	<br>

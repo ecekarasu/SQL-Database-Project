@@ -6,12 +6,11 @@ include "config.php";
 <form action = "selecthave.php" method = "POST">
 <input type="text" name="cid" placeholder="The id of the criminal">
 <!DOCTYPE html>
-<html>
+<html><link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Have
-	</title>
+	<title>select relationships</title>
 	<style>
 table {
   font-family: arial, sans-serif;

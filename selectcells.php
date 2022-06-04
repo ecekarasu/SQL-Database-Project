@@ -2,15 +2,19 @@
 include "config.php";
 
 ?>
-
+<div align="center">
+<br>
+<h3>You will see the cells with more capacity than the number you entered
 <form action = "selectcells.php" method = "POST">
-<input type="text" name="min_capacity" placeholder="The Minimum Capacity:">
+<br>
+<input type="text" name="min_capacity" placeholder="Minimum Capacity">
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "style.css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cells</title>
+	<title>select cells</title>
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -31,11 +35,7 @@ tr:nth-child(even) {
 </head>
 <body>
 <table>
-  <tr>
-    <th>cell_no</th>
-    <th>capacity</th>
-  </tr>
-
+</div>
 <?php
 if(isset($_POST['min_capacity']))
 {

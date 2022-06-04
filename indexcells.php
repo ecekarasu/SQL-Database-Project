@@ -8,7 +8,7 @@
 <div align=center>
 <h2>CELLS
 <br>
-<h3> Here are the cells in the database:
+<h3> Here are the current cells:
 <br>
 <br>
 </div>

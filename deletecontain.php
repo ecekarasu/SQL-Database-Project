@@ -1,7 +1,13 @@
 <?php
 include "config.php";
 ?>
-
+<link rel= "stylesheet" href= "style.css">
+<title>delete a relationship</title>
+<div align="center">
+<br>
+<h3>Choose the name of the prison that you want to delete
+<br>
+<br>
 <form action = "deletecontain.php" method = "POST">
 <select name = "pname">
 <?php  

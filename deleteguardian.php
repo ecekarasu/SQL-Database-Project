@@ -1,7 +1,13 @@
 <?php
 include "config.php";
 ?>
-
+<link rel= "stylesheet" href= "style.css">
+<title>delete a guardian</title>
+<div align="center">
+<br>
+<h3>Choose the id of the guardian that you want to delete
+<br>
+<br>
 <form action = "deleteguardian.php" method = "POST">
 <select name = "gid">
 <?php  
@@ -25,6 +31,6 @@ if(isset($_POST['gid']))
 	$selection_gid = $_POST['gid'];
 	$sql_statement = "DELETE FROM guardians WHERE gid = $selection_gid";
 	$result = mysqli_query($db, $sql_statement);
-	header ("Location: index_guardians.php");	
+	header ("Location: indexguardians.php");	
 }
 ?>
