@@ -8,7 +8,7 @@
 <div align=center>
 <h2> MAIN PAGE
 <br>
-<h3> Select one of the tables below:
+<h3> Select one of the tables below :)
 <br>
 <br>
 </body>
