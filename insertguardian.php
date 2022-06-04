@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inserted</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<?php
+
+include "config.php";
+?>
+<div align = center>
+<form action="insertguardian.php" method="POST">
+	<input type="text" name="gid" placeholder="The id">
+	<br>
+	<input type="text" name="gname" placeholder="The name">
+	<br>
+	<input type="text" name="working_hours" placeholder="Working hours">
+	<br>
+	<button>INSERT</button>
+</form>
+</div>
+<?php
+if(isset($_POST['gid']))
+{
+	$gid = $_POST['gid'];
+	$gname = $_POST['gname'];
+	$working_hours = $_POST['working_hours'];
+	$sql_statement = "INSERT INTO guardians(gid, gname, working_hours) VALUES ('$gid', '$gname', '$working_hours')";
+	$result = mysqli_query($db, $sql_statement);
+	header ("Location: indexguardians.php");	
+}
+?>
