@@ -31,6 +31,6 @@ if(isset($_POST['pname']) AND isset($_POST['gid']))
 	$gid = $_POST['gid'];
 	$sql_statement = "INSERT INTO protected_by(pname, gid) VALUES ('$pname', '$gid')";
 	$result = mysqli_query($db, $sql_statement);
-	header ("Location: indexprotected.php");	
+	header ("Location: indexprotected_by.php");	
 }
 ?>

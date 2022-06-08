@@ -40,7 +40,7 @@ tr:nth-child(even) {
 if(isset($_POST['cid']))
 {
 	$cid = $_POST['cid'];
-	$sql_deneme = "SELECT * FROM defended_by WHERE cid = '$cid'";
+	$sql_deneme = "SELECT * FROM have WHERE cid = '$cid'";
 	$denemeque = mysqli_query($db, $sql_deneme);
 	while($row = mysqli_fetch_assoc($denemeque)) { ?>
 	<tr>

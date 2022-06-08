@@ -29,7 +29,7 @@ if(isset($_POST['cid']) AND isset($_POST['vid']))
 {
 	$cid = $_POST['cid'];
 	$vid = $_POST['vid'];
-	$sql_statement = "INSERT INTO have(cid, vid) VALUES ('$vid', '$cid')";
+	$sql_statement = "INSERT INTO have(cid, vid) VALUES ('$cid', '$vid')";
 	$result = mysqli_query($db, $sql_statement);
 	header ("Location: indexhave.php");	
 }

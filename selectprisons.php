@@ -40,7 +40,7 @@ tr:nth-child(even) {
 if(isset($_POST['location']))
 {
 	$location = $_POST['location'];
-	$sql_deneme = "SELECT * FROM prisons WHERE location > '$location'";
+	$sql_deneme = "SELECT * FROM prisons WHERE location = '$location'";
 	$denemeque = mysqli_query($db, $sql_deneme);
 	while($row = mysqli_fetch_assoc($denemeque)) { ?>
 	<tr>

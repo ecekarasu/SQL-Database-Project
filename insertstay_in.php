@@ -32,8 +32,8 @@ if(isset($_POST['cid']) AND isset($_POST['cell_no']))
 	$cid = $_POST['cid'];
 	$cell_no = $_POST['cell_no'];
 	$since = $_POST['since'];
-	$sql_statement = "INSERT INTO stay_in(cid, cell_no, since) VALUES ('$pname', '$cell_no', '$since')";
+	$sql_statement = "INSERT INTO stay_in(cid, cell_no, since) VALUES ('$cid', '$cell_no', '$since')";
 	$result = mysqli_query($db, $sql_statement);
-	header ("Location: indexstay_in.php");	
+	header ("Location: indexstay_in.php");
 }
 ?>

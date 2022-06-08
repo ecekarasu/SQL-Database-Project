@@ -2,8 +2,8 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: localhost
--- Üretim Zamanı: 05 Haz 2022, 23:09:11
+-- Anamakine: 127.0.0.1
+-- Üretim Zamanı: 06 Haz 2022, 18:50:44
 -- Sunucu sürümü: 10.1.38-MariaDB
 -- PHP Sürümü: 5.6.40
 
@@ -57,6 +57,17 @@ CREATE TABLE `contain` (
   `number_of` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Tablo döküm verisi `contain`
+--
+
+INSERT INTO `contain` (`pname`, `cell_no`, `number_of`) VALUES
+('Kartal Ceza Infaz Kurumu', 22, 1313),
+('Gaziantep Ceza Infaz Kurumu', 1, 818),
+('Kalecik Ceza Infaz Kurumu', 76, 125),
+('Eskisehir Ceza Infaz Kurumu', 37, 2200),
+('Kartal Ceza Infaz Kurumu', 3, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -93,6 +104,17 @@ CREATE TABLE `defended_by` (
   `cid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Tablo döküm verisi `defended_by`
+--
+
+INSERT INTO `defended_by` (`lid`, `cid`) VALUES
+(9, 1),
+(13, 2),
+(22, 3),
+(55, 4),
+(47, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -127,6 +149,17 @@ CREATE TABLE `have` (
   `cid` int(11) NOT NULL,
   `vid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Tablo döküm verisi `have`
+--
+
+INSERT INTO `have` (`cid`, `vid`) VALUES
+(3, 435),
+(1, 48),
+(2, 34),
+(5, 769),
+(6, 567);
 
 -- --------------------------------------------------------
 
@@ -169,9 +202,7 @@ CREATE TABLE `prisons` (
 --
 
 INSERT INTO `prisons` (`pname`, `population`, `location`) VALUES
-('a', 1, 'abc'),
 ('Develi Ceza Infaz Kurumu', 600, 'Kayseri'),
-('Erzurum Ceza Infaz Kurumu', 1000, 'Erzurum'),
 ('Eskisehir Ceza Infaz Kurumu', 1000, 'Eskisehir'),
 ('Gaziantep Ceza Infaz Kurumu', 1200, 'Gaziantep'),
 ('Kalecik Ceza Infaz Kurumu', 2000, 'Ankara'),
@@ -188,6 +219,17 @@ CREATE TABLE `protected_by` (
   `gid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Tablo döküm verisi `protected_by`
+--
+
+INSERT INTO `protected_by` (`pname`, `gid`) VALUES
+('Gaziantep Ceza Infaz Kurumu', 6),
+('Kartal Ceza Infaz Kurumu', 4),
+('Kalecik Ceza Infaz Kurumu', 3),
+('Develi Ceza Infaz Kurumu', 2),
+('Eskisehir Ceza Infaz Kurumu', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -199,6 +241,17 @@ CREATE TABLE `stay_in` (
   `cell_no` int(11) NOT NULL,
   `since` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Tablo döküm verisi `stay_in`
+--
+
+INSERT INTO `stay_in` (`cid`, `cell_no`, `since`) VALUES
+(1, 1, '2001-01-08'),
+(2, 3, '2005-01-01'),
+(3, 37, '1990-06-23'),
+(4, 76, '2020-09-18'),
+(5, 94, '2021-12-30');
 
 -- --------------------------------------------------------
 
@@ -217,7 +270,6 @@ CREATE TABLE `visitors` (
 --
 
 INSERT INTO `visitors` (`vid`, `visiting_time`, `relation`) VALUES
-(27, 17, 'son'),
 (34, 17, 'father'),
 (48, 9, 'father'),
 (435, 12, 'friend'),

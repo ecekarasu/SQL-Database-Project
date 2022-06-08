@@ -29,7 +29,7 @@ while($pname_rows = mysqli_fetch_assoc($myresult))
 if(isset($_POST['pname']))
 {
 	$selection_pname = $_POST['pname'];
-	$sql_statement = "DELETE FROM contain WHERE pname = $selection_pname";
+	$sql_statement = "DELETE FROM contain WHERE pname = '$selection_pname'";
 	$result = mysqli_query($db, $sql_statement);
 	header ("Location: indexcontain.php");	
 }

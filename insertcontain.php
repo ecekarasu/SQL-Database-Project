@@ -16,7 +16,7 @@
 
 include "config.php";
 ?>
-<form action="insertprotected_by.php" method="POST">
+<form action="insertcontain.php" method="POST">
 	<input type="text" name="pname" placeholder="The name of the prison">
 	<br>
 	<input type="text" name="cell_no" placeholder="The cell number">
@@ -34,6 +34,6 @@ if(isset($_POST['pname']) AND isset($_POST['cell_no']))
 	$number_of = $_POST['number_of'];
 	$sql_statement = "INSERT INTO contain(pname, cell_no, number_of) VALUES ('$pname', '$cell_no', '$number_of')";
 	$result = mysqli_query($db, $sql_statement);
-	header ("Location: indexcontain.php");	
+	header ("Location: indexcontain.php");
 }
 ?>
